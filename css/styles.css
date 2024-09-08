@@ -1,0 +1,102 @@
+/* about color */
+:root {
+    /* Warna Merah */
+    --merah: #DE2C2C !important;
+    --merah100: #FBE1E1 !important;
+    --merah200: #F7ACAC !important;
+    --merah300: #F37070 !important;
+    --merah400: #DE2C2C !important;
+    --merah500: #9F1D1D !important;
+    --merah600: #640E0E !important;
+    --merah700: #2F0303 !important;
+  
+    /* Warna Hijau */
+    --hijau: #2CDE85 !important;
+    --hijau100: #A5FEC5 !important;
+    --hijau200: #2CDE85 !important;
+    --hijau300: #21B26A !important;
+    --hijau400: #178950 !important;
+    --hijau500: #0D6137 !important;
+    --hijau600: #053C20 !important;
+    --hijau700: #011B0B !important;
+  
+    /* Warna Abu */
+    --abu: #8b8b8b !important;
+    --abu100: #EBEBEB !important;
+  
+    /* Warna Putih */
+    --putih: #E9E7E7 !important;
+    --putih100: #FFFFFF !important;
+    
+    /* Warna Hitam */
+    --hitam: #212529 !important;
+}
+
+/* set up background-color */
+/* merah */
+.bg-merah {
+    background-color: var(--merah) !important;
+  }
+  .bg-merah100 {
+    background-color: var(--merah100) !important;
+  }
+  .bg-merah200 {
+    background-color: var(--merah200) !important;
+  }
+  .bg-merah300 {
+    background-color: var(--merah300) !important;
+  }
+  .bg-merah400 {
+    background-color: var(--merah400) !important;
+  }
+  .bg-merah500 {
+    background-color: var(--merah500) !important;
+  }
+  .bg-merah600 {
+    background-color: var(--merah600) !important;
+  }
+  .bg-merah700 {
+    background-color: var(--merah700) !important;
+  }
+  
+/* set up text-color */
+.text-merah {
+    color: var(--merah) !important;
+  }
+  
+/* about text */
+.text-bold {
+    font-weight: bold;
+}
+.text-underline{
+    text-decoration: underline;
+}
+
+.text-tengah {
+    text-align: center;
+}
+
+/* about container */
+/* flex atas-bawah */
+.d-flex-bos {
+    display: flex;
+    flex-direction: column;
+}
+
+/* about button */
+.btn-large {
+    height: 32px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* margin bottom */
+.mb {
+    margin-bottom: 1rem;
+}
+.mb-2 {
+    margin-bottom: 2rem;
+}
+.mb-5 {
+    margin-bottom: 5rem;
+}
