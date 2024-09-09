@@ -83,6 +83,16 @@
     flex-direction: column;
 }
 
+/* border */
+.bordered-cuy{
+  border: 3px;
+}
+
+.no-margin>p{
+  margin-block-start: 0rem;
+  margin-block-end: 0rem;
+}
+
 /* about button */
 .btn-large {
     height: 32px;
@@ -99,4 +109,46 @@
 }
 .mb-5 {
     margin-bottom: 5rem;
+}
+
+/* other */
+.banner {
+  padding-top:32px; 
+  padding-bottom:32px;
+}
+
+.img-segitiga-bos {
+  height: 300px;
+  width: 400px;
+  background-image: url(https://3.bp.blogspot.com/-g6sCbjR0CcI/WfQqDdsUWhI/AAAAAAAAA6o/9I6SnDmBYjoAh-3_eSjZr_zwzajehZwqgCLcBGAs/s1600/luas%2Bsegitiga%2Bdalam%2Btrigonometri.JPG);
+  background-size: 100% 100%;
+  background-position: center;
+  align-self:center;
+}
+
+.input-wrapper{
+	width:50%;
+	display: flex;
+  align-items: center;
+	justify-content: space-between;
+}
+
+.input-wrapper>input {
+	width:65%;
+}
+
+input[type=number] {
+	padding: 3px 3px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #3D3D3D;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.main-content{
+  display: flex;
+}
+.main-content>aside{
+  flex: 1;
 }
