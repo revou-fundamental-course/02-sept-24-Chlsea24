@@ -83,6 +83,11 @@
     flex-direction: column;
 }
 
+.btn-right{
+  display: flex;
+  justify-content: end;
+}
+
 /* border */
 .bordered-cuy{
   border: 3px;
@@ -98,6 +103,24 @@
     height: 32px;
     border: none;
     border-radius: 8px;
+}
+
+.btn-hitung {
+  width: 100px;
+  border: 1px solid;
+  border-radius: 8px;
+  background-color: var(--merah200);
+  color: var(--hitam);
+  font-weight: bold;
+}
+
+.btn-reset {
+  width: 100px;
+  border: 1px solid;
+  border-radius: 8px;
+  background-color: var(--abu100);
+  color: var(--hitam);
+  font-weight: bold;
 }
 
 /* margin bottom */

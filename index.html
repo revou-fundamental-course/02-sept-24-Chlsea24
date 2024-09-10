@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revou Mini Project - Chlsea24</title>
 
-    <!-- connecting index.html with styles.css -->
+    <!-- connecting index.html
+        with styles.css -->
     <link rel="stylesheet" href="css\styles.css">
+    <!-- with javascript-->
+     <script src="./js/script.js"></script>
 </head>
 
 <body>
@@ -25,7 +28,7 @@
             <button class="btn-large mb bg-merah100" href="#">Jajargenjang</button>
         </section>
 
-        <!-- Section 2 -->
+        <!-- Section 2 : SEGITIGA -->
         <section class="main-content">
             <!-- Keliling -->
             <aside>
@@ -105,20 +108,24 @@
     
                     <div class="input-wrapper">
                         <label for="panjang_alas">Panjang Alas : </label>
-                        <input id="panjang_alas" type="number"/>
+                        <input id="panjang_alas" type="number" placeholder="Nilai alas"/>
                     </div>
-                    <div class="input-wrapper">
+                    <div class="input-wrapper mb-2">
                         <label for="tinggi">Tinggi : </label>
-                        <input id="tinggi" type="number"/>
+                        <input id="tinggi" type="number" placeholder="Nilai tinggi"/>
                     </div>
     
-                    <p>_</p>
-                    <p>Yey</p>
-    
-                    <button>Hitung</button>
+                    <button type="button" class="btn-hitung" onclick="hitung_luas()">Hitung</button>
                 </form>
+    
+                <div class="d-flex-bos">
+                    <p id="hasil_luas" class="text-merah text-bold text-tengah"></p>
+                    <button type="button" class="btn-reset" onclick="clear_luas_segitiga()">Reset</button>
+                </div>
             </aside>
         </section>
+
+        <!-- Section 3 : Jajargenjang -->
     </main>
 </body>
 
