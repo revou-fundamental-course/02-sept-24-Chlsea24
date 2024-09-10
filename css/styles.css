@@ -1,3 +1,8 @@
+/* seems not functioning tho? */
+.d-none {
+  display: none;
+}
+
 /* about color */
 :root {
     /* Warna Merah */
@@ -119,6 +124,9 @@
   color: var(--hitam);
   font-weight: bold;
 }
+.btn-hitung:hover {
+  background-color: var(--merah100) !important;
+}
 
 .btn-reset {
   width: 100px;
@@ -127,6 +135,9 @@
   background-color: var(--abu100);
   color: var(--hitam);
   font-weight: bold;
+}
+.btn-reset:hover {
+  background-color: var(--putih100) !important;
 }
 
 /* margin bottom */
@@ -178,6 +189,7 @@ input[type=number] {
 /* content , container , etc */
 .main-content{
   display: flex;
+  margin-top: 20px;
 }
 .main-content>aside{
   flex: 1;

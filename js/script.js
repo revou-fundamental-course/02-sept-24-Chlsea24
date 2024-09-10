@@ -1,3 +1,26 @@
+/* try dynamic
+document.addEventListener('DOMContentLoaded', function() {
+    const btnSegitiga = document.getElementById('btnSegitiga');
+    const btnJajargenjang = document.getElementById('btnJajargenjang');
+    const segitigaSection = document.getElementById('segitigaSection');
+    const jajargenjangSection = document.getElementById('jajargenjangSection');
+
+    if (btnSegitiga && btnJajargenjang && segitigaSection && jajargenjangSection) {
+        btnSegitiga.addEventListener('click', function() {
+            segitigaSection.classList.remove('d-none');
+            jajargenjangSection.classList.add('d-none');
+        });
+
+        btnJajargenjang.addEventListener('click', function() {
+            jajargenjangSection.classList.remove('d-none');
+            segitigaSection.classList.add('d-none');
+        });
+    } else {
+        console.error('One or more elements not found.');
+    }
+});
+
+// Fungsi Aritmatik
 function hitung_keliling_segitiga(){
     let sisi1 = document.getElementById("panjang1").value;
     let sisi2 = document.getElementById("panjang2").value;
@@ -9,7 +32,7 @@ function hitung_keliling_segitiga(){
         let hasil =parseInt(sisi1) + parseInt(sisi2) + parseInt(sisi3);
         document.getElementById('hasil_keliling').textContent = `[Hasilnya adalah ${hasil}]`;
     }
-}
+} */
 
 function clear_keliling_segitiga(){
     document.getElementById('panjang1').value = '';
