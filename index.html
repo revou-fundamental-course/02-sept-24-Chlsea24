@@ -41,14 +41,14 @@
                 <article class="d-flex-bos">
                     <div class="img-segitiga-bos"></div>
                     <p>Rumus Keliling Segitiga, yaitu :</p>
-                    <p class="text-tengah"><b>K = s1 + s2 + s3</b></p>
+                    <p class="text-tengah"><b>K = a + b + c</b></p>
 
                     <div class="no-margin">
                         <p>Dimana :</p>
                         <p>K = keliling</p>
-                        <p>s1 = sisi1</p>
-                        <p>s2 = sisi2</p>
-                        <p>s3 = sisi3</p>
+                        <p>a = sisi1</p>
+                        <p>b = sisi2</p>
+                        <p>c = sisi3</p>
                     </div>
                 </article>
     
@@ -61,20 +61,27 @@
     
                     <div class="input-wrapper">
                         <label for="panjang1">Panjang sisi 1 : </label>
-                        <input id="panjang1" type="number"/>
+                        <input id="panjang1" type="number" placeholder="Nilai sisi 1"/>
                     </div>
                     <div class="input-wrapper">
                         <label for="panjang2">Panjang sisi 2 : </label>
-                        <input id="panjang2" type="number"/>
+                        <input id="panjang2" type="number" placeholder="Nilai sisi 2"/>
                     </div>
                     <div class="input-wrapper">
                         <label for="panjang3">Panjang sisi 3 : </label>
-                        <input id="panjang3" type="number"/>
-                    </div>    
-
-                    <p>Yey</p>
-                    <button>Hitung</button>
+                        <input id="panjang3" type="number" placeholder="Nilai sisi 3"/>
+                    </div>
+                    
+                    <button type="button" class="btn-hitung" onclick="hitung_keliling_segitiga()">Hitung</button>
                 </form>
+
+                <!-- Output Field -->
+                <div class="d-flex-bos btn-right-wrapper">
+                    <p id="hasil_keliling" class="text-merah text-bold text-tengah"></p>
+                    <div class="btn-right">
+                        <button type="button" class="btn-reset" onclick="clear_keliling_segitiga()">Reset</button>
+                    </div>
+                </div>
             </aside>
 
             <!-- Luas -->
@@ -88,13 +95,13 @@
                 <article class="d-flex-bos">
                     <div class="img-segitiga-bos"></div>
                     <p>Rumus Luas Segitiga, yaitu :</p>
-                    <p class="text-tengah"><b>L = 1/2 * a * t</b></p>
+                    <p class="text-tengah"><b>L = 1/2 * c * h</b></p>
 
                     <div class="no-margin">
                         <p>Dimana :</p>
                         <p>L = luas</p>
-                        <p>a = panjang alas</p>
-                        <p>t = tinggi</p>
+                        <p>c = panjang alas</p>
+                        <p>h = tinggi</p>
                         <p>_</p>
                     </div>
                 </article>
@@ -115,13 +122,17 @@
                         <input id="tinggi" type="number" placeholder="Nilai tinggi"/>
                     </div>
     
-                    <button type="button" class="btn-hitung" onclick="hitung_luas()">Hitung</button>
+                    <button type="button" class="btn-hitung" onclick="hitung_luas_segitiga()">Hitung</button>
                 </form>
-    
-                <div class="d-flex-bos">
+                
+                <!-- Output Field -->
+                <div class="d-flex-bos btn-right-wrapper">
                     <p id="hasil_luas" class="text-merah text-bold text-tengah"></p>
-                    <button type="button" class="btn-reset" onclick="clear_luas_segitiga()">Reset</button>
+                    <div class="btn-right">
+                        <button type="button" class="btn-reset" onclick="clear_luas_segitiga()">Reset</button>
+                    </div>
                 </div>
+                
             </aside>
         </section>
 

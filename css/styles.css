@@ -83,9 +83,15 @@
     flex-direction: column;
 }
 
-.btn-right{
+.btn-right {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
+  width: 100%;
+}
+.btn-right-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* border */
@@ -169,9 +175,29 @@ input[type=number] {
 	box-sizing: border-box;
 }
 
+/* content , container , etc */
 .main-content{
   display: flex;
 }
 .main-content>aside{
   flex: 1;
+}
+
+section.main-content {
+  display: flex;
+  gap: 20px; /* Jarak antar aside */
+}
+
+aside {
+  flex: 1;
+  padding: 20px;
+  border-left: 2px solid #000; /* Garis vertikal pada sisi kiri */
+}
+
+aside:first-of-type {
+  border-left: none; /* Hilangkan garis pada elemen aside pertama */
+}
+
+hr {
+  border-color: var(--merah200);
 }
