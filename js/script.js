@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         console.error('One or more elements not found.');
     }
-});
+}); */
 
 // Fungsi Aritmatik
 function hitung_keliling_segitiga(){
@@ -32,7 +32,7 @@ function hitung_keliling_segitiga(){
         let hasil =parseInt(sisi1) + parseInt(sisi2) + parseInt(sisi3);
         document.getElementById('hasil_keliling').textContent = `[Hasilnya adalah ${hasil}]`;
     }
-} */
+}
 
 function clear_keliling_segitiga(){
     document.getElementById('panjang1').value = '';
