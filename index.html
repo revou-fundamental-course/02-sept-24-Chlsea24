@@ -25,12 +25,12 @@
     <main>
         <!-- Section 1 -->
         <section class="d-flex-bos">
-            <button type="button" class="btn-large mb bg-merah200" id="btnSegitiga">Segitiga</button>
-            <button type="button" class="btn-large mb bg-merah100" id="btnJajargenjang">Jajargenjang</button>
+            <button type="button" class="btn-large mb" id="btnSegitiga">Segitiga</button>
+            <button type="button" class="btn-large mb" id="btnJajargenjang">Jajargenjang</button>
         </section>
 
         <!-- Section 2 : SEGITIGA -->
-        <section id="segitigaSection" class="main-content d-none">
+        <section id="segitigaSection" class="main-content" style="display: none;">
             <!-- Keliling -->
             <aside>
                 <header>
@@ -136,6 +136,115 @@
                 
             </aside>
         </section>
+
+        <!-- Section 3 : Jajargenjang -->
+        <section id="jajargenjangSection" class="main-content" style="display: none;">
+            <!-- Keliling -->
+            <aside>
+                <header>
+                    <div class="text-tengah">
+                        <h1 class="bg-merah200 banner">Keliling Jajargenjang</h1>
+                    </div>
+                </header>
+    
+                <article class="d-flex-bos">
+                    <div class="img-jajargenjang-bos"></div>
+                    <p>Rumus Keliling Jajargenjang, yaitu :</p>
+                    <p class="text-tengah"><b>K = 2 * sisi1 * sisi2</b></p>
+
+                    <div class="no-margin">
+                        <p>Dimana :</p>
+                        <p>K = keliling</p>
+                        <p>AB & CD = sisi1</p>
+                        <p>BC & AD = sisi2</p>
+                    </div>
+                </article>
+    
+                <hr />
+    
+                <form>
+                    <header class="text-tengah">
+                        <h1>Hitung Keliling Jajargenjang</h1>
+                    </header>
+    
+                    <div class="input-wrapper">
+                        <label for="p_jajar1">Panjang sisi 1 : </label>
+                        <input id="p_jajar1" type="number" placeholder="Nilai sisi 1"/>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="p_jajar2">Panjang sisi 2 : </label>
+                        <input id="p_jajar2" type="number" placeholder="Nilai sisi 2"/>
+                    </div>
+                    
+                    <button type="button" class="btn-hitung" onclick="hitung_keliling_jajargenjang()">Hitung</button>
+                </form>
+
+                <!-- Output Field -->
+                <div class="d-flex-bos btn-right-wrapper">
+                    <p id="hasil_keliling_jajar" class="text-merah text-bold text-tengah"></p>
+                    <div class="btn-right">
+                        <button type="button" class="btn-reset" onclick="clear_keliling_jajargenjang()">Reset</button>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Luas -->
+            <aside>
+                <header>
+                    <div class="text-tengah">
+                        <h1 class="bg-merah200 banner">Luas Jajargenjang</h1>
+                    </div>
+                </header>
+    
+                <article class="d-flex-bos">
+                    <div class="img-jajargenjang-bos"></div>
+                    <p>Rumus Luas Jajargenjang, yaitu :</p>
+                    <p class="text-tengah"><b>L = a * t</b></p>
+
+                    <div class="no-margin">
+                        <p>Dimana :</p>
+                        <p>L = luas</p>
+                        <p>a = panjang alas</p>
+                        <p>t = tinggi</p>
+                        <p>_</p>
+                    </div>
+                </article>
+    
+                <hr />
+    
+                <form>
+                    <header class="text-tengah">
+                        <h1>Hitung Luas Jajargenjang</h1>
+                    </header>
+    
+                    <div class="input-wrapper">
+                        <label for="alas_jajar">Panjang Alas : </label>
+                        <input id="alas_jajar" type="number" placeholder="Nilai alas"/>
+                    </div>
+                    <div class="input-wrapper mb-2">
+                        <label for="tinggi_jajar">Tinggi : </label>
+                        <input id="tinggi_jajar" type="number" placeholder="Nilai tinggi"/>
+                    </div>
+    
+                    <button type="button" class="btn-hitung" onclick="hitung_luas_jajargenjang()">Hitung</button>
+                </form>
+                
+                <!-- Output Field -->
+                <div class="d-flex-bos btn-right-wrapper">
+                    <p id="hasil_luas_jajar" class="text-merah text-bold text-tengah"></p>
+                    <div class="btn-right">
+                        <button type="button" class="btn-reset" onclick="clear_luas_jajargenjang()">Reset</button>
+                    </div>
+                </div>
+                
+            </aside>
+        </section>
+
+        <!-- Back to Top -->
+        <section id="backToTopSection" class="d-flex-bos" style="display: none;">
+            <button type="button" class="btn-large-2 mb" id="backToTopBtn" onclick="scrollToTop()">Kembali Ke Atas</button>            
+        </section>
+
     </main>
 
     <footer>

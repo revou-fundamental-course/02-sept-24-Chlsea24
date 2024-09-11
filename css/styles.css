@@ -1,6 +1,6 @@
 /* seems not functioning tho? */
 .d-none {
-  display: none;
+  display:none;
 }
 
 /* about color */
@@ -116,6 +116,21 @@
     border-radius: 8px;
 }
 
+.btn-large:hover {
+  background-color: var(--merah100) !important;
+}
+
+.btn-large-2 {
+  height: 32px;
+  width: 25%;
+  border: none;
+  border-radius: 8px;
+}
+
+.btn-large-2:hover {
+  background-color: var(--abu100) !important;
+}
+
 .btn-hitung {
   width: 100px;
   border: 1px solid;
@@ -161,6 +176,15 @@
   height: 300px;
   width: 400px;
   background-image: url(https://3.bp.blogspot.com/-g6sCbjR0CcI/WfQqDdsUWhI/AAAAAAAAA6o/9I6SnDmBYjoAh-3_eSjZr_zwzajehZwqgCLcBGAs/s1600/luas%2Bsegitiga%2Bdalam%2Btrigonometri.JPG);
+  background-size: 100% 100%;
+  background-position: center;
+  align-self:center;
+}
+
+.img-jajargenjang-bos {
+  height: 300px;
+  width: 400px;
+  background-image: url(https://th.bing.com/th/id/OIP.jXusUrlMiSPhJIekUrRJggAAAA?rs=1&pid=ImgDetMain);
   background-size: 100% 100%;
   background-position: center;
   align-self:center;
